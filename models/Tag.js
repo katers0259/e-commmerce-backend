@@ -22,7 +22,7 @@ Tag.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    model: 'tag',
+    modelName:'tag',
   }
 );
 

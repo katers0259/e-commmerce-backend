@@ -30,9 +30,9 @@ Product.init(
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      defaultValue: '10',
+      defaultValue: 10,
       validate: {
-        isNumeric: true,
+        isInt: true,
       },
     },
     category_id: {
@@ -48,7 +48,7 @@ Product.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    model: 'product',
+    modelName: 'product',
   }
 );
 
